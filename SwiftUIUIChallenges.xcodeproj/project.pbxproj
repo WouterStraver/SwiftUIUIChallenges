@@ -13,6 +13,8 @@
 		263344F327A6DC360086A5B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263344E127A6DC340086A5B3 /* ContentView.swift */; };
 		263344F427A6DC360086A5B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263344E227A6DC350086A5B3 /* Assets.xcassets */; };
 		263344F527A6DC360086A5B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263344E227A6DC350086A5B3 /* Assets.xcassets */; };
+		263344FF27A6DD1C0086A5B3 /* DayOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263344FE27A6DD1C0086A5B3 /* DayOneView.swift */; };
+		2633450027A6DD1C0086A5B3 /* DayOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263344FE27A6DD1C0086A5B3 /* DayOneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		263344E727A6DC350086A5B3 /* SwiftUIUIChallenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIUIChallenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		263344ED27A6DC360086A5B3 /* SwiftUIUIChallenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIUIChallenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		263344EF27A6DC360086A5B3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		263344FE27A6DD1C0086A5B3 /* DayOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +57,10 @@
 		263344DF27A6DC340086A5B3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				263344E027A6DC340086A5B3 /* SwiftUIUIChallengesApp.swift */,
-				263344E127A6DC340086A5B3 /* ContentView.swift */,
 				263344E227A6DC350086A5B3 /* Assets.xcassets */,
+				263344E127A6DC340086A5B3 /* ContentView.swift */,
+				263344FE27A6DD1C0086A5B3 /* DayOneView.swift */,
+				263344E027A6DC340086A5B3 /* SwiftUIUIChallengesApp.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -178,6 +182,7 @@
 			files = (
 				263344F227A6DC360086A5B3 /* ContentView.swift in Sources */,
 				263344F027A6DC360086A5B3 /* SwiftUIUIChallengesApp.swift in Sources */,
+				263344FF27A6DD1C0086A5B3 /* DayOneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +192,7 @@
 			files = (
 				263344F327A6DC360086A5B3 /* ContentView.swift in Sources */,
 				263344F127A6DC360086A5B3 /* SwiftUIUIChallengesApp.swift in Sources */,
+				2633450027A6DD1C0086A5B3 /* DayOneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
