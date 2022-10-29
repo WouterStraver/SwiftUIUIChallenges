@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Fast_Furious_7_-_Paul_Walker_-_Vin_Diesel_-_Dwayne_Johnson_-_Tallenge_Hollywood_Action_Movie_Poster_9ba800c2-0128-4cf3-a258-4b14b5d747f1.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

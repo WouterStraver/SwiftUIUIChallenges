@@ -9,13 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
-                NavigationLink("Day 1") {
-                    DayOneView()
+                NavigationLink(destination: MovieHomeView()) {
+                    Text("Day 1")
+                }
+                NavigationLink(value: "Hi") {
+                    Text("Hi")
+                }
+                NavigationLink(destination: FoodMainView().toolbar(.hidden)) {
+                    Text("Food view")
                 }
             }
+            .navigationDestination(for: String.self, destination: { _ in
+                MovieHomeView()
+            })
         }
+//        NavigationView {
+//            List {
+//                NavigationLink("Day 1") {
+//                    MovieHomeView()
+//                }
+//            }
+//        }
     }
 }
 
