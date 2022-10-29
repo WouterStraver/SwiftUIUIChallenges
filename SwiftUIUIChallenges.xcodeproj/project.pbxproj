@@ -21,6 +21,8 @@
 		260CABF1290C0A2C00E93869 /* FoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CABEF290C0A2C00E93869 /* FoodRow.swift */; };
 		260CABF3290DB22900E93869 /* CompositionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CABF2290DB22900E93869 /* CompositionalView.swift */; };
 		260CABF4290DB22900E93869 /* CompositionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CABF2290DB22900E93869 /* CompositionalView.swift */; };
+		260CABF6290DBC5700E93869 /* AdaptiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CABF5290DBC5700E93869 /* AdaptiveView.swift */; };
+		260CABF7290DBC5700E93869 /* AdaptiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CABF5290DBC5700E93869 /* AdaptiveView.swift */; };
 		263344F027A6DC360086A5B3 /* SwiftUIUIChallengesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263344E027A6DC340086A5B3 /* SwiftUIUIChallengesApp.swift */; };
 		263344F127A6DC360086A5B3 /* SwiftUIUIChallengesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263344E027A6DC340086A5B3 /* SwiftUIUIChallengesApp.swift */; };
 		263344F227A6DC360086A5B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263344E127A6DC340086A5B3 /* ContentView.swift */; };
@@ -45,6 +47,7 @@
 		260CABEC290C05DE00E93869 /* CategoryBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryBarView.swift; sourceTree = "<group>"; };
 		260CABEF290C0A2C00E93869 /* FoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRow.swift; sourceTree = "<group>"; };
 		260CABF2290DB22900E93869 /* CompositionalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalView.swift; sourceTree = "<group>"; };
+		260CABF5290DBC5700E93869 /* AdaptiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveView.swift; sourceTree = "<group>"; };
 		263344E027A6DC340086A5B3 /* SwiftUIUIChallengesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIUIChallengesApp.swift; sourceTree = "<group>"; };
 		263344E127A6DC340086A5B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		263344E227A6DC350086A5B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +103,7 @@
 		263344DF27A6DC340086A5B3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				260CABF5290DBC5700E93869 /* AdaptiveView.swift */,
 				260CABDB290BFF2500E93869 /* Fonts */,
 				26C4090228EC3AE50064F435 /* Extension */,
 				26A4D29A28EC399F00FB785A /* FoodView */,
@@ -305,6 +309,7 @@
 				263344F027A6DC360086A5B3 /* SwiftUIUIChallengesApp.swift in Sources */,
 				26688C6027FF5C5C005FC995 /* Movie.swift in Sources */,
 				263344FF27A6DD1C0086A5B3 /* DayOneView.swift in Sources */,
+				260CABF6290DBC5700E93869 /* AdaptiveView.swift in Sources */,
 				26A4D29C28EC39B900FB785A /* FoodMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +324,7 @@
 				260CABF4290DB22900E93869 /* CompositionalView.swift in Sources */,
 				263344F127A6DC360086A5B3 /* SwiftUIUIChallengesApp.swift in Sources */,
 				260CABF1290C0A2C00E93869 /* FoodRow.swift in Sources */,
+				260CABF7290DBC5700E93869 /* AdaptiveView.swift in Sources */,
 				2633450027A6DD1C0086A5B3 /* DayOneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

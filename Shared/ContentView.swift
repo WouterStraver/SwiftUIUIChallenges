@@ -20,6 +20,9 @@ struct ContentView: View {
                 NavigationLink(destination: FoodMainView().toolbar(.hidden)) {
                     Text("Food view")
                 }
+                NavigationLink(destination: TestAdaptiveView()) {
+                    Text("Adaptive View")
+                }
             }
             .navigationDestination(for: String.self, destination: { _ in
                 MovieHomeView()
