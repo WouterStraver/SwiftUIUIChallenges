@@ -23,18 +23,20 @@ struct ContentView: View {
                 NavigationLink(destination: TestAdaptiveView()) {
                     Text("Adaptive View")
                 }
+                NavigationLink(destination: TagView()) {
+                    Text("TagView")
+                }
+                NavigationLink(destination: TestCompositionalView()) {
+                    Text("CompositionalView")
+                }
+                NavigationLink(destination: CustomLayoutView()) {
+                    Text("CustomLayout view")
+                }
             }
             .navigationDestination(for: String.self, destination: { _ in
                 MovieHomeView()
             })
         }
-//        NavigationView {
-//            List {
-//                NavigationLink("Day 1") {
-//                    MovieHomeView()
-//                }
-//            }
-//        }
     }
 }
 

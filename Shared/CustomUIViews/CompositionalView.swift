@@ -25,7 +25,7 @@ struct CompositionalView<Content,Item,ID>: View where Content: View, ID: Hashabl
                 RowView(row: row)
             }
         }
-        
+        .navigationTitle("CompositionalView")
     }
     
     //MARK: Identifying Row Type
@@ -124,8 +124,8 @@ struct CompositionalView<Content,Item,ID>: View where Content: View, ID: Hashabl
     
 }
 
-struct CompositionalView_Previews: PreviewProvider {
-    static var previews: some View {
+struct TestCompositionalView: View {
+    var body: some View {
         ScrollView {
             CompositionalView(items: 1...10, id: \.self) { item in
                 ZStack {
@@ -136,6 +136,12 @@ struct CompositionalView_Previews: PreviewProvider {
                 }
             }
         }
+    }
+}
+
+struct CompositionalView_Previews: PreviewProvider {
+    static var previews: some View {
+        TestCompositionalView()
     }
 }
 

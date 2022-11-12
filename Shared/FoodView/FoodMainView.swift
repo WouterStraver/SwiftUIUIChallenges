@@ -17,20 +17,33 @@ struct FoodMainView: View {
             ScrollView {
                 VStack {
                     header
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 160))], spacing: 16, pinnedViews: [.sectionHeaders]) {
-                    
-                        Section {
-                            ForEach(0...5, id:\.self) { _ in
-                                FoodRow()
-                                    .padding(.horizontal, 8)
-                            }
-                        } header: {
-                            CategoryBarView()
-                                .background(Color(UIColor.systemBackground))
+//                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 160))], spacing: 16, pinnedViews: [.sectionHeaders]) {
+//
+//                        Section {
+//                            ForEach(0...5, id:\.self) { _ in
+//                                FoodRow()
+//                                    .padding(.horizontal, 8)
+//                            }
+//                        } header: {
+//                            CategoryBarView()
+//                                .background(Color(UIColor.systemBackground))
+//                        }
+//                    }
+//                    .listStyle(.plain)
+//                    .padding(.horizontal)
+                    CustomLayout(spacing: 24) {
+                        FoodRow()
+                        Rectangle()
+                            .frame(height: 150)
+                            .foregroundColor(.red)
+                            .cornerRadius(12)
+                        ForEach(0...5, id:\.self) { _ in
+                            FoodRow()
                         }
+                        
+                        
                     }
-                    .listStyle(.plain)
-                    .padding(.horizontal)
+                    .padding()
                 }
             }
         }

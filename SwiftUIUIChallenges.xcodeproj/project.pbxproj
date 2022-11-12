@@ -36,6 +36,9 @@
 		26688C6627FF61A8005FC995 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C6527FF61A8005FC995 /* SnapCarousel.swift */; };
 		26A4D29C28EC39B900FB785A /* FoodMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A4D29B28EC39B900FB785A /* FoodMainView.swift */; };
 		26C4090428EC3AF20064F435 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4090328EC3AF20064F435 /* ColorExtension.swift */; };
+		26E64557291FB00300B23E8E /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E64556291FB00300B23E8E /* TagView.swift */; };
+		26E64559291FB3B500B23E8E /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E64556291FB00300B23E8E /* TagView.swift */; };
+		26E6455B291FB8EA00B23E8E /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E6455A291FB8EA00B23E8E /* CustomLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,8 @@
 		26688C6527FF61A8005FC995 /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
 		26A4D29B28EC39B900FB785A /* FoodMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMainView.swift; sourceTree = "<group>"; };
 		26C4090328EC3AF20064F435 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		26E64556291FB00300B23E8E /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		26E6455A291FB8EA00B23E8E /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +108,7 @@
 		263344DF27A6DC340086A5B3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				260CABF5290DBC5700E93869 /* AdaptiveView.swift */,
+				26E64558291FB3AB00B23E8E /* CustomUIViews */,
 				260CABDB290BFF2500E93869 /* Fonts */,
 				26C4090228EC3AE50064F435 /* Extension */,
 				26A4D29A28EC399F00FB785A /* FoodView */,
@@ -158,7 +163,6 @@
 				26A4D29B28EC39B900FB785A /* FoodMainView.swift */,
 				260CABEC290C05DE00E93869 /* CategoryBarView.swift */,
 				260CABEF290C0A2C00E93869 /* FoodRow.swift */,
-				260CABF2290DB22900E93869 /* CompositionalView.swift */,
 			);
 			path = FoodView;
 			sourceTree = "<group>";
@@ -169,6 +173,17 @@
 				26C4090328EC3AF20064F435 /* ColorExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		26E64558291FB3AB00B23E8E /* CustomUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				260CABF2290DB22900E93869 /* CompositionalView.swift */,
+				26E64556291FB00300B23E8E /* TagView.swift */,
+				260CABF5290DBC5700E93869 /* AdaptiveView.swift */,
+				26E6455A291FB8EA00B23E8E /* CustomLayout.swift */,
+			);
+			path = CustomUIViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,11 +319,13 @@
 				26688C6427FF5DF8005FC995 /* MovieHomeView.swift in Sources */,
 				26688C6627FF61A8005FC995 /* SnapCarousel.swift in Sources */,
 				263344F227A6DC360086A5B3 /* ContentView.swift in Sources */,
+				26E6455B291FB8EA00B23E8E /* CustomLayout.swift in Sources */,
 				260CABF3290DB22900E93869 /* CompositionalView.swift in Sources */,
 				26C4090428EC3AF20064F435 /* ColorExtension.swift in Sources */,
 				263344F027A6DC360086A5B3 /* SwiftUIUIChallengesApp.swift in Sources */,
 				26688C6027FF5C5C005FC995 /* Movie.swift in Sources */,
 				263344FF27A6DD1C0086A5B3 /* DayOneView.swift in Sources */,
+				26E64557291FB00300B23E8E /* TagView.swift in Sources */,
 				260CABF6290DBC5700E93869 /* AdaptiveView.swift in Sources */,
 				26A4D29C28EC39B900FB785A /* FoodMainView.swift in Sources */,
 			);
@@ -326,6 +343,7 @@
 				260CABF1290C0A2C00E93869 /* FoodRow.swift in Sources */,
 				260CABF7290DBC5700E93869 /* AdaptiveView.swift in Sources */,
 				2633450027A6DD1C0086A5B3 /* DayOneView.swift in Sources */,
+				26E64559291FB3B500B23E8E /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

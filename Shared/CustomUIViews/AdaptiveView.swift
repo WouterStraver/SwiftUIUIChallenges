@@ -20,6 +20,7 @@ struct AdaptiveView<Content: View>: View  {
                 content
             }
         }
+        .navigationTitle("AdaptiveView")
     }
 }
 
