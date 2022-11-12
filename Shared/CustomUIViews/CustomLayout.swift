@@ -99,8 +99,12 @@ struct CustomLayout: Layout {
         else {return 0}
         
         let rowsBefore = rows[..<rowIndex]
-        let totalHeight = rowsBefore.compactMap { row in
-            row.0[columnIndex].sizeThatFits(proposal).height + spacing
+        let totalHeight = rowsBefore.compactMap { row -> CGFloat? in
+            if row.0.count  - 1 >= columnIndex {
+             return row.0[columnIndex].sizeThatFits(proposal).height + spacing
+            } else {
+                return nil
+            }
         }.reduce(0, +)
         return totalHeight
     }
