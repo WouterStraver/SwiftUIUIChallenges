@@ -27,10 +27,18 @@ struct FoodMainView: View {
                                 FoodRow()
                                     .offset(y: animationIndex > 0 ? 0 : 150)
                                     .opacity(animationIndex > 0 ? 1 : 0)
+                                    .contextMenu {
+                                        Button(action: {}) {
+                                            Text("Let's go")
+                                        }
+                                    } preview: {
+                                        FoodDetailView()
+                                    }
+
                                 Rectangle()
                                     .frame(height: 150)
                                     .foregroundColor(.clear)
-                                    .background(Color(uiColor: UIColor().hexStringToUIColor(hex: "#84CB83")).gradient)
+                                    .background(Color.Theme.green.gradient)
                                     .cornerRadius(12)
                                     .overlay(alignment: .bottomTrailing, content: {
                                         GeometryReader { geometry in
@@ -55,6 +63,11 @@ struct FoodMainView: View {
                                     FoodRow()
                                         .offset(y: animationIndex > index + 2 ? 0 : (150 + 70 * Double(index)))
                                         .opacity(animationIndex > index + 2 ? 1 : 0)
+                                        .contextMenu {
+                                            Button(action: {}) {
+                                                Text("Hi")
+                                            }
+                                        }
                                 }
                             }
                         } header: {

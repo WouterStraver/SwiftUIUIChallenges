@@ -25,6 +25,7 @@ struct CustomLayoutView: View {
             }
             .padding()
             
+            
         }.background(Color.green)
     }
 }
