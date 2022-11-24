@@ -41,7 +41,7 @@ struct FoodRow: View {
             .padding(.horizontal, 12)
             .padding(.bottom, 10)
         }
-        .background(Color.primary)
+        .background(Color.systemBackground)
         .cornerRadius(12)
         .shadow(color: Color.black.opacity(0.1), radius: 2, x: 1, y: 1)
         .overlay {

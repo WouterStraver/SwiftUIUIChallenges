@@ -21,22 +21,22 @@ struct FoodDetailView: View {
                 .clipped()
             VStack(alignment:.leading, spacing: 12) {
                 Text("Cream Soup")
-                    .font(.title)
-                    .fontWeight(.semibold)
+                    .displaySmall(.semibold)
                     .foregroundColor(.black.opacity(0.8))
                 HStack {
                     Text("Allergen-free")
+                        
                     Circle()
-                        .frame(width: 4, height: 4)
+                        .frame(width: 5, height: 5)
                         .foregroundColor(.Theme.green)
                     Text("Allergen-free")
                     Circle()
-                        .frame(width: 4, height: 4)
+                        .frame(width: 5, height: 5)
                         .foregroundColor(.Theme.green)
                     Text("Allergen-free")
                     Spacer()
                 }
-                .font(.caption)
+                .bodyLarge()
                 .opacity(0.7)
                 .foregroundColor(.Theme.gray)
             }
@@ -60,7 +60,7 @@ struct FoodDetailView: View {
             Spacer()
         }
         .ignoresSafeArea()
-        .background(Color.primary)
+        .background(Color.systemBackground)
         .shadow(color: Color.black.opacity(0.1), radius: 2, x: 1, y: 1)
         .overlay {
             GeometryReader { geometry in

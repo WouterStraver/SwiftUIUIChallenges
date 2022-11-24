@@ -72,7 +72,7 @@ struct FoodMainView: View {
                             }
                         } header: {
                             CategoryBarView()
-                                .background(Color.primary)
+                                .background(Color.systemBackground)
                         }
                     }
                     .listStyle(.plain)

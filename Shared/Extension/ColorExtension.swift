@@ -27,4 +27,9 @@ extension Color {
             blue: Double(rgbValue & 0x0000FF) / 255.0,
             opacity: 1.0)        
     }
+    #if os(iOS)
+    static let systemBackground = Color(uiColor: UIColor.systemBackground)
+    #else
+    static let systemBackground = Color(nsColor: NSColor.windowBackgroundColor)
+    #endif
 }

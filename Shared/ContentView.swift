@@ -12,10 +12,7 @@ struct ContentView: View {
         NavigationStack {
             List {
                 NavigationLink(destination: MovieHomeView()) {
-                    Text("Day 1")
-                }
-                NavigationLink(value: "Hi") {
-                    Text("Hi")
+                    Text("Movies")
                 }
                 NavigationLink(destination: FoodMainView().toolbar(.hidden)) {
                     Text("Food view")
