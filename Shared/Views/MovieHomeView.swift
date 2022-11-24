@@ -126,7 +126,9 @@ struct MovieHomeView: View {
                         .tag(index)
                 }
             }
+            #if os(iOS)
             .tabViewStyle(.page(indexDisplayMode: .never))
+            #endif
             .animation(.easeInOut, value: currentIndex)
 
             let color: Color = scheme == .dark ? .black : .white

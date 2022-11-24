@@ -60,7 +60,7 @@ struct FoodDetailView: View {
             Spacer()
         }
         .ignoresSafeArea()
-        .background(Color(UIColor.systemBackground))
+        .background(Color.primary)
         .shadow(color: Color.black.opacity(0.1), radius: 2, x: 1, y: 1)
         .overlay {
             GeometryReader { geometry in

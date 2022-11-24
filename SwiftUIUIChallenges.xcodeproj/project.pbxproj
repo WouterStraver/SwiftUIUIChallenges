@@ -34,6 +34,12 @@
 		263344F527A6DC360086A5B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 263344E227A6DC350086A5B3 /* Assets.xcassets */; };
 		263344FF27A6DD1C0086A5B3 /* DayOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263344FE27A6DD1C0086A5B3 /* DayOneView.swift */; };
 		2633450027A6DD1C0086A5B3 /* DayOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263344FE27A6DD1C0086A5B3 /* DayOneView.swift */; };
+		2652193F292F84FA001E070B /* FoodMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A4D29B28EC39B900FB785A /* FoodMainView.swift */; };
+		26521940292F8501001E070B /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E6455A291FB8EA00B23E8E /* CustomLayout.swift */; };
+		26521941292F8508001E070B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C4090328EC3AF20064F435 /* ColorExtension.swift */; };
+		26521942292F85A1001E070B /* MovieHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C6327FF5DF8005FC995 /* MovieHomeView.swift */; };
+		26521943292F85B6001E070B /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C6527FF61A8005FC995 /* SnapCarousel.swift */; };
+		26521944292F85C7001E070B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C5F27FF5C5C005FC995 /* Movie.swift */; };
 		26688C6027FF5C5C005FC995 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C5F27FF5C5C005FC995 /* Movie.swift */; };
 		26688C6427FF5DF8005FC995 /* MovieHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C6327FF5DF8005FC995 /* MovieHomeView.swift */; };
 		26688C6627FF61A8005FC995 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C6527FF61A8005FC995 /* SnapCarousel.swift */; };
@@ -408,16 +414,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26521942292F85A1001E070B /* MovieHomeView.swift in Sources */,
 				260CABEE290C05DE00E93869 /* CategoryBarView.swift in Sources */,
 				263344F327A6DC360086A5B3 /* ContentView.swift in Sources */,
 				260CABE8290BFFC100E93869 /* Theme.swift in Sources */,
+				2652193F292F84FA001E070B /* FoodMainView.swift in Sources */,
 				260CABF4290DB22900E93869 /* CompositionalView.swift in Sources */,
+				26521944292F85C7001E070B /* Movie.swift in Sources */,
 				263344F127A6DC360086A5B3 /* SwiftUIUIChallengesApp.swift in Sources */,
+				26521940292F8501001E070B /* CustomLayout.swift in Sources */,
 				260CABF1290C0A2C00E93869 /* FoodRow.swift in Sources */,
+				26521943292F85B6001E070B /* SnapCarousel.swift in Sources */,
 				260CABF7290DBC5700E93869 /* AdaptiveView.swift in Sources */,
 				2633450027A6DD1C0086A5B3 /* DayOneView.swift in Sources */,
 				26E64559291FB3B500B23E8E /* TagView.swift in Sources */,
 				26066F77292E6F7C009F8B81 /* FoodDetailView.swift in Sources */,
+				26521941292F8508001E070B /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +683,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wms.SwiftUIUIChallenges;
 				PRODUCT_NAME = SwiftUIUIChallenges;
@@ -701,7 +713,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wms.SwiftUIUIChallenges;
 				PRODUCT_NAME = SwiftUIUIChallenges;

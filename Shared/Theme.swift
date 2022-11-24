@@ -16,9 +16,9 @@ class Theme {
 
 extension Color {
     struct Theme {
-        static let orange = Color(UIColor().hexStringToUIColor(hex: "#F9A708"))
-        static let green = Color(uiColor: UIColor().hexStringToUIColor(hex: "#84CB83"))
-        static let lightGray = Color(UIColor().hexStringToUIColor(hex: "#9b9b9b"))
-        static let gray = Color(UIColor().hexStringToUIColor(hex: "#5b5b5b"))
+        static let orange = Color(hex: "#F9A708")
+        static let green = Color(hex: "#84CB83")
+        static let lightGray = Color(hex: "#9b9b9b")
+        static let gray = Color(hex: "#5b5b5b")
     }
 }

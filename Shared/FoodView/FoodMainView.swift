@@ -72,7 +72,7 @@ struct FoodMainView: View {
                             }
                         } header: {
                             CategoryBarView()
-                                .background(Color(UIColor.systemBackground))
+                                .background(Color.primary)
                         }
                     }
                     .listStyle(.plain)
@@ -113,7 +113,7 @@ extension FoodMainView {
                     .frame(height:40)
                     .padding(.leading, 40)
                     .background(
-                        Color(UIColor().hexStringToUIColor(hex: "#f9f9f9"))
+                        Color(hex: "#f9f9f9")
                             .cornerRadius(12)
                     )
                     .overlay(alignment: .leading) {
