@@ -40,6 +40,10 @@
 		26521942292F85A1001E070B /* MovieHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C6327FF5DF8005FC995 /* MovieHomeView.swift */; };
 		26521943292F85B6001E070B /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C6527FF61A8005FC995 /* SnapCarousel.swift */; };
 		26521944292F85C7001E070B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C5F27FF5C5C005FC995 /* Movie.swift */; };
+		26521947292FA254001E070B /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26521946292FA254001E070B /* Poppins-Light.ttf */; };
+		26521948292FA254001E070B /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26521946292FA254001E070B /* Poppins-Light.ttf */; };
+		2652194A292FB95C001E070B /* ObservableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26521949292FB95C001E070B /* ObservableScrollView.swift */; };
+		2652194B292FB95C001E070B /* ObservableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26521949292FB95C001E070B /* ObservableScrollView.swift */; };
 		26688C6027FF5C5C005FC995 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C5F27FF5C5C005FC995 /* Movie.swift */; };
 		26688C6427FF5DF8005FC995 /* MovieHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C6327FF5DF8005FC995 /* MovieHomeView.swift */; };
 		26688C6627FF61A8005FC995 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26688C6527FF61A8005FC995 /* SnapCarousel.swift */; };
@@ -63,7 +67,7 @@
 /* Begin PBXFileReference section */
 		26066F6A292E6480009F8B81 /* SwiftUIUIChallengesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIUIChallengesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26066F6C292E6480009F8B81 /* SwiftUIUIChallengesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIUIChallengesUITests.swift; sourceTree = "<group>"; };
-		26066F75292E6F7C009F8B81 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
+		26066F75292E6F7C009F8B81 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		260CABDC290BFF5600E93869 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		260CABDD290BFF5600E93869 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		260CABDE290BFF5600E93869 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		263344ED27A6DC360086A5B3 /* SwiftUIUIChallenges.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIUIChallenges.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		263344EF27A6DC360086A5B3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		263344FE27A6DD1C0086A5B3 /* DayOneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOneView.swift; sourceTree = "<group>"; };
+		26521946292FA254001E070B /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		26521949292FB95C001E070B /* ObservableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableScrollView.swift; sourceTree = "<group>"; };
 		26688C5F27FF5C5C005FC995 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		26688C6327FF5DF8005FC995 /* MovieHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieHomeView.swift; sourceTree = "<group>"; };
 		26688C6527FF61A8005FC995 /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
@@ -125,6 +131,7 @@
 		260CABDB290BFF2500E93869 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				26521946292FA254001E070B /* Poppins-Light.ttf */,
 				260CABDC290BFF5600E93869 /* Poppins-Bold.ttf */,
 				260CABDD290BFF5600E93869 /* Poppins-Regular.ttf */,
 				260CABDE290BFF5600E93869 /* Poppins-SemiBold.ttf */,
@@ -222,6 +229,7 @@
 				26E64556291FB00300B23E8E /* TagView.swift */,
 				260CABF5290DBC5700E93869 /* AdaptiveView.swift */,
 				26E6455A291FB8EA00B23E8E /* CustomLayout.swift */,
+				26521949292FB95C001E070B /* ObservableScrollView.swift */,
 			);
 			path = CustomUIViews;
 			sourceTree = "<group>";
@@ -337,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				260CABE1290BFF5600E93869 /* Poppins-Regular.ttf in Resources */,
+				26521947292FA254001E070B /* Poppins-Light.ttf in Resources */,
 				260CABE3290BFF5600E93869 /* Poppins-SemiBold.ttf in Resources */,
 				263344F427A6DC360086A5B3 /* Assets.xcassets in Resources */,
 				260CABDF290BFF5600E93869 /* Poppins-Bold.ttf in Resources */,
@@ -348,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				260CABE2290BFF5600E93869 /* Poppins-Regular.ttf in Resources */,
+				26521948292FA254001E070B /* Poppins-Light.ttf in Resources */,
 				260CABE4290BFF5600E93869 /* Poppins-SemiBold.ttf in Resources */,
 				263344F527A6DC360086A5B3 /* Assets.xcassets in Resources */,
 				260CABE0290BFF5600E93869 /* Poppins-Bold.ttf in Resources */,
@@ -402,6 +412,7 @@
 				260CABF3290DB22900E93869 /* CompositionalView.swift in Sources */,
 				26C4090428EC3AF20064F435 /* ColorExtension.swift in Sources */,
 				263344F027A6DC360086A5B3 /* SwiftUIUIChallengesApp.swift in Sources */,
+				2652194A292FB95C001E070B /* ObservableScrollView.swift in Sources */,
 				26688C6027FF5C5C005FC995 /* Movie.swift in Sources */,
 				263344FF27A6DD1C0086A5B3 /* DayOneView.swift in Sources */,
 				26E64557291FB00300B23E8E /* TagView.swift in Sources */,
@@ -425,6 +436,7 @@
 				26521940292F8501001E070B /* CustomLayout.swift in Sources */,
 				260CABF1290C0A2C00E93869 /* FoodRow.swift in Sources */,
 				26521943292F85B6001E070B /* SnapCarousel.swift in Sources */,
+				2652194B292FB95C001E070B /* ObservableScrollView.swift in Sources */,
 				260CABF7290DBC5700E93869 /* AdaptiveView.swift in Sources */,
 				2633450027A6DD1C0086A5B3 /* DayOneView.swift in Sources */,
 				26E64559291FB3B500B23E8E /* TagView.swift in Sources */,
@@ -611,7 +623,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SwiftUIUIChallenges--iOS--Info.plist";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -646,7 +657,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SwiftUIUIChallenges--iOS--Info.plist";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

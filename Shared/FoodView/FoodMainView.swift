@@ -14,77 +14,82 @@ struct FoodMainView: View {
     @State private var searchString = ""
     @State var startingAnimation = false
     @State private var animationIndex = 0
+    @State private var showDetail:Bool = false
     
     var body: some View {
-        VStack {
-            navButtons
-            ScrollView {
-                VStack {
-                    header
-                    LazyVStack(pinnedViews: .sectionHeaders) {
-                        Section {
-                            CustomLayout(spacing: 24) {
-                                FoodRow()
-                                    .offset(y: animationIndex > 0 ? 0 : 150)
-                                    .opacity(animationIndex > 0 ? 1 : 0)
-                                    .contextMenu {
-                                        Button(action: {}) {
-                                            Text("Let's go")
+        ZStack {
+            VStack {
+                navButtons
+                ScrollView {
+                    VStack {
+                        header
+                        LazyVStack(pinnedViews: .sectionHeaders) {
+                            Section {
+                                CustomLayout(spacing: 24) {
+                                    Button(action: {
+                                        withAnimation(.easeIn(duration: 1)) {
+                                            showDetail = true
                                         }
-                                    } preview: {
-                                        FoodDetailView()
+                                    }){
+                                        FoodRow()
+                                            .offset(y: animationIndex > 0 ? 0 : 150)
+                                            .opacity(animationIndex > 0 ? 1 : 0)
                                     }
-
-                                Rectangle()
-                                    .frame(height: 150)
-                                    .foregroundColor(.clear)
-                                    .background(Color.Theme.green.gradient)
-                                    .cornerRadius(12)
-                                    .overlay(alignment: .bottomTrailing, content: {
-                                        GeometryReader { geometry in
-                                            Image("salad")
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fit)
-                                                .frame(width: geometry.size.width, height: geometry.size.height, alignment: .bottomTrailing)
-                                                .position(x: geometry.size.width - geometry.size.width * 0.2, y: geometry.size.height - geometry.size.height * 0.2)
-                                                .clipped()
-                                        }
-                                    })
-                                    .overlay(alignment:.topLeading) {
-                                        Text("New\nSalad!")
-                                            .font(.title2)
-                                            .foregroundColor(.white)
-                                            .bold()
-                                            .padding()
-                                    }
-                                    .offset(y: animationIndex > 1 ? 0 : 150)
-                                    .opacity(animationIndex > 1 ? 1 : 0)
-                                ForEach(0...5, id:\.self) { index in
-                                    FoodRow()
-                                        .offset(y: animationIndex > index + 2 ? 0 : (150 + 70 * Double(index)))
-                                        .opacity(animationIndex > index + 2 ? 1 : 0)
-                                        .contextMenu {
-                                            Button(action: {}) {
-                                                Text("Hi")
+                                    
+                                    Rectangle()
+                                        .frame(height: 150)
+                                        .foregroundColor(.clear)
+                                        .background(Color.Theme.green.gradient)
+                                        .cornerRadius(12)
+                                        .overlay(alignment: .bottomTrailing, content: {
+                                            GeometryReader { geometry in
+                                                Image("salad")
+                                                    .resizable()
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .frame(width: geometry.size.width, height: geometry.size.height, alignment: .bottomTrailing)
+                                                    .position(x: geometry.size.width - geometry.size.width * 0.2, y: geometry.size.height - geometry.size.height * 0.2)
+                                                    .clipped()
                                             }
+                                        })
+                                        .overlay(alignment:.topLeading) {
+                                            Text("New\nSalad!")
+                                                .font(.title2)
+                                                .foregroundColor(.white)
+                                                .bold()
+                                                .padding()
                                         }
+                                        .offset(y: animationIndex > 1 ? 0 : 150)
+                                        .opacity(animationIndex > 1 ? 1 : 0)
+                                    ForEach(0...5, id:\.self) { index in
+                                        FoodRow()
+                                            .offset(y: animationIndex > index + 2 ? 0 : (150 + 70 * Double(index)))
+                                            .opacity(animationIndex > index + 2 ? 1 : 0)
+                                            .contextMenu {
+                                                Button(action: {}) {
+                                                    Text("Hi")
+                                                }
+                                            }
+                                    }
                                 }
+                            } header: {
+                                CategoryBarView()
+                                    .background(Color.systemBackground)
                             }
-                        } header: {
-                            CategoryBarView()
-                                .background(Color.systemBackground)
+                        }
+                        .listStyle(.plain)
+                        .padding(.horizontal)
+                    }
+                }.onAppear {
+                    startingAnimation = true
+                    for index in 0...7 {
+                        withAnimation(.easeInOut(duration: 1.2).delay(Double(index) * 0.1)){
+                            animationIndex += 1
                         }
                     }
-                    .listStyle(.plain)
-                    .padding(.horizontal)
                 }
-            }.onAppear {
-                startingAnimation = true
-                for index in 0...7 {
-                    withAnimation(.easeInOut(duration: 1.2).delay(Double(index) * 0.1)){
-                        animationIndex += 1
-                    }
-                }
+            }
+            if(showDetail) {               
+                FoodDetailView(showDetail: $showDetail)
             }
         }
     }

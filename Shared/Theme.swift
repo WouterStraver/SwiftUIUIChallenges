@@ -20,6 +20,7 @@ extension Color {
         static let green = Color(hex: "#84CB83")
         static let lightGray = Color(hex: "#9b9b9b")
         static let gray = Color(hex: "#5b5b5b")
+        static let text = Color(hex: "#929292")
     }
 }
 
@@ -105,7 +106,9 @@ struct ScaledFont: ViewModifier {
             case .semibold:
                 return content.font(.custom("\(name)-SemiBold", size: scaledSize))
             case .bold:
-                return content.font(.custom("\(name)-Bold", size: scaledSize))                
+                return content.font(.custom("\(name)-Bold", size: scaledSize))
+            case .light:
+                return content.font(.custom("\(name)-Light", size: scaledSize))
             default:
                 return content.font(.custom("\(name)-Regular", size: scaledSize))
             }

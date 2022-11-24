@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FoodRow: View {
+struct FoodRow: View {    
     @State private var size: CGFloat = .zero
     var body: some View {
         VStack(spacing:0) {
@@ -21,7 +21,7 @@ struct FoodRow: View {
             VStack(alignment:.leading, spacing:8) {
                 Text("Cream soup")
                     .font(.custom(Theme.poppins, size: 14))
-                    .foregroundColor(.Theme.gray)
+                    .foregroundColor(.Theme.gray)                    
                 HStack {
                     Text("€4,50")
                         .font(.custom(Theme.poppinSemiBold, size: 14))
@@ -59,7 +59,7 @@ struct FoodRow: View {
 }
 
 struct FoodRow_Previews: PreviewProvider {
-    static var previews: some View {
+        static var previews: some View {
         FoodRow()
             .previewLayout(PreviewLayout.fixed(width: 300, height: 300))
     }

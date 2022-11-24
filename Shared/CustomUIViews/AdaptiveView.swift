@@ -9,14 +9,18 @@ import SwiftUI
 
 struct AdaptiveView<Content: View>: View  {
     var content: Content
-    init(@ViewBuilder content: @escaping() -> Content) {
+    var axis: Axis.Set
+    var showIndicators: Bool
+    init(_ axis: Axis.Set = .vertical, showsIndicators: Bool = true, @ViewBuilder content: @escaping() -> Content) {
+        self.axis = axis
+        self.showIndicators = showsIndicators
         self.content = content()
     }
     
     var body: some View {
         ViewThatFits {
             content
-            ScrollView {
+            ScrollView(axis,showsIndicators: showIndicators) {
                 content
             }
         }
